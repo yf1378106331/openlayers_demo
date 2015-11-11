@@ -1,0 +1,29 @@
+html,body {
+    height: 99%;
+    width: 99%;
+}
+#map {
+    width: 800px;
+    height: 600px;
+    border: 1px solid black;
+    left:30px;
+    position: relative;
+}
+/* General settings */
+body {
+    font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+    font-size: small;
+}
+/* Toolbar styles */
+#toolbar {
+    position: relative;
+    padding-bottom: 0.5em;
+    height: 50px;
+    text-align: center;
+}
+
+#toolbar ul li{
+    list-style:none;
+    float: left;
+    line-height:50px;
+}

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link rel="stylesheet" href="css/mapLayers.css"/>
+    <script src="lib/OpenLayers.js"></script>
+
+</head>
+<body onload="init()">
+<div id="toolbar">
+    <ul>
+        <li> <input type="button" value="放大" onclick="zoomIn()"/></li>
+        <li><input type="button" value="缩小" onclick="zoomOut()"/></li>
+        <li><input type="button" value="获取地图大小" onclick="getSize()"/></li>
+        <li> <input type="button" value="平移" onclick="toggleControl('none')"/></li>
+        <li><input type="button" value="线路测量" onclick="toggleControl('line')"/></li>
+        <li><input type="button" value="测量面积" onclick="toggleControl('polygon')"/></li>
+        <li> <input type="button" value="显示标注" onclick="addMarker()"/></li>
+        <li> <input type="button" value="移除标注" onclick="removeMarker()"/></li>
+        <li> <input type="button" value="画多边形获取经纬度坐标" onclick="test()"/></li>
+    </ul>
+</div>
+<div id='map'></div>
+
+<div id="wrapper">
+    <div id="screen_xy"></div>
+    <div id="location">经纬度坐标
+    </div>
+    <div id="scale">
+    </div>
+    <div id="output">
+    </div>
+</div>
+<div id="xystr"></div>
+<div id="nodelist">
+    <em>Click on the map to get feature info</em>
+</div>
+<script src="js/mapLayers.js"></script>
+</body>
+</html>
